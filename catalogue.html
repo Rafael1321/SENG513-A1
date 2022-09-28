@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodie</title>
+        <link rel="icon" href="assets/food/hamburger.png">
+        <link rel="stylesheet" href="styles/catalogue.css">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <img src="assets/food/hamburger.png" alt="">
+                <span><a href="/home.html">Foodie</a></span>
+            </div>
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="outer-container center-horizontally center-vertically">
+        
+            <div class="inner-container">
+                <div class="inner-container-title">Food Catalogue</div>
+                <div class="inner-container-body"></div>
+            </div>
+        </div>
+        <footer>
+            <span>&copy; Rafael Flores Souza</span>
+        </footer>
+
+        <script>
+            function handleClick(foodId) { location.href = `/info.html?foodId=${parseInt(foodId.substring(foodId.indexOf("-") + 1))}`};
+
+            fetch('./food-data.json')
+            .then(response => response.json())
+            .then(data => {
+
+                var count = 0
+                const innerContainerBody = document.getElementsByClassName("inner-container-body")[0];
+                data.food.forEach( food => {
+                    if(count % 4 === 0){
+                        innerContainerBody.innerHTML += `<div class="row"></div>`
+                    }
+                    const lastRow = innerContainerBody.getElementsByClassName('row')[innerContainerBody.getElementsByClassName('row').length - 1];
+                    lastRow.innerHTML += `<div id="food-${count}" class="row-element" onclick="handleClick(this.id)">
+                                            <img src=${food.img} alt=${food.name}/>
+                                            <hr>
+                                            <p>${food.name}</p>
+                                         </div>`
+                    count++;
+                });
+
+                food = data.food[params.get('foodId')];
+            }).catch(error => console.log(error));
+
+        </script>
+
+    </body>
+</html>

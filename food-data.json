@@ -1,0 +1,66 @@
+{
+    "food" : [
+        {
+            "name":"Hamburger",
+            "ingredients": ["bun", "tomato", "onion", "meat"],
+            "img": "./assets/food/hamburger.png",
+            "description": "A round patty of ground beef, fried or grilled and typically served on a bun or roll and garnished with various condiments."
+        },
+        {
+            "name":"Hot Pot",
+            "ingredients": [""],
+            "img": "./assets/food/hot-pot.png"
+        },
+        {
+            "name":"Tteok",
+            "ingredients": [""],
+            "img": "./assets/food/tteok.png"
+        },
+        {
+            "name":"Pizza",
+            "ingredients": [],
+            "img": "./assets/food/pizza.png"
+        },
+        {
+            "name":"Roasted Chicken",
+            "ingredients": [""],
+            "img": "./assets/food/roasted-chicken.png"
+        },
+        {
+            "name":"Ramen",
+            "ingredients": [""],
+            "img": "./assets/food/ramen.png"
+        },
+        {
+            "name":"Masala Dosa",
+            "ingredients": [""],
+            "img": "./assets/food/masala-dosa.png"
+        },
+        {
+            "name":"Garlic Shrimp",
+            "ingredients": [],
+            "img": "./assets/food/garlic-shrimp.png"
+        },
+        {
+            "name":"Noodle Soup",
+            "ingredients": [""],
+            "img": "./assets/food/noodle-soup.png"
+        },
+        {
+            "name":"Paella",
+            "ingredients": [""],
+            "img": "./assets/food/paella.png"
+        },
+
+        {
+            "name":"Hot Dog",
+            "ingredients": [""],
+            "img": "./assets/food/hot-dog.png"
+        },
+        {
+            "name":"Paneer",
+            "ingredients": [],
+            "img": "./assets/food/paneer.png"
+        }
+    ]
+}

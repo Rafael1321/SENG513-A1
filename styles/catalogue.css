@@ -1,0 +1,75 @@
+@import "main.css";
+
+.inner-container-body{
+    overflow-y:scroll;
+}
+
+/* Rows and Row */
+
+.rows{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+    background-color: rgb(214, 205, 164);
+    width: inherit;
+    height: 560px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    border: none !important;
+    height: 170px;
+    min-height: 170px;
+    border: 1px solid rgb(214, 205, 164);
+    border-radius: 5px;
+    padding: 15px;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+/* Row Element */
+
+.row-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    height: 100%;
+    border: 2px solid rgb(28, 103, 88);
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(238, 242, 230, 0.5);
+    transition: 0.3 ease-in-out;
+}
+
+.row-element:hover{
+    background-color: rgb(238, 242, 230, 1.0);
+    cursor: pointer;
+}
+
+.row-element img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto;
+}
+
+.row-element hr{
+    width: 85%;
+    height: 3px !important;
+    background-color: rgb(125, 125, 125, 0.2);
+    height: 2px;
+    border:none;
+}
+
+.row-element p{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(28, 103, 88);
+}

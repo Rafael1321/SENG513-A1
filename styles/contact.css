@@ -1,0 +1,110 @@
+@import "main.css";
+
+.inner-container-body{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Inner Container Body Left */
+
+.inner-container-body-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 4px solid rgb(28, 103, 88, 0.4);
+
+}
+
+.inner-container-body-left img{
+    width: 350px;
+    height: 350px;
+}
+
+/* Inner Container Body Right */
+
+.inner-container-body-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container-body-right input, 
+.inner-container-body-right textarea{
+    background-color:  rgb(238, 242, 230, 0.5);
+    width: 80%;
+    border-radius: 15px;
+    border: none;
+    padding: 8px;
+    padding-left: 15px;
+    color: rgb(28, 103, 88, 1);
+    font-size: 1.25rem;
+    border: 3px dotted transparent;
+    margin: 10px;
+    transition: 0.3 ease-in-out;
+}
+
+.inner-container-body-right input:focus ~ .custom-label,
+.inner-container-body-right input:not(:focus):valid ~ .custom-label,
+.inner-container-body-right textarea:focus ~ .custom-label,
+.inner-container-body-right textarea:not(:focus):valid ~ .custom-label{
+  top: 8px;
+  left: 53px;
+  color:rgb(28, 103, 88);
+  font-size: 0.8rem;
+}
+
+.inner-container-body-right div{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+.inner-container-body-right textarea{
+    resize: none;
+}
+
+.inner-container-body-right input:hover, 
+.inner-container-body-right textarea:hover{
+    background-color:  rgb(238, 242, 230, 0.8);
+}
+
+.inner-container-body-right input:focus, 
+.inner-container-body-right textarea:focus{
+    background-color:  rgb(238, 242, 230, 1);
+    outline: none; 
+}
+
+.inner-container-body-right button{
+    background-color: rgb(28, 103, 88);
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(238, 242, 230);
+    border: none;
+    transition: ease-in-out;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.inner-container-body-right button:hover{
+    background-color: rgb(22, 77, 66);
+    cursor: pointer;
+}
+
+/* Custom Label */
+.custom-label {
+    color: rgb(28, 103, 88, 0.6);
+    display: inline-block;
+    position: absolute;
+    left: 53px; 
+    top: 19px;
+    height: auto;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+  }

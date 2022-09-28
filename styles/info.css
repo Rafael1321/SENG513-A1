@@ -1,0 +1,92 @@
+@import "main.css";
+
+.inner-container-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Separator */
+
+.separator{
+    width: 0.5%;
+    background-color: rgb(28, 103, 88, 0.4);
+    margin: 0 75px 0 0;
+    height: 100%;
+    border-radius: 30px;
+}
+
+/* Inner container body left */
+
+.inner-container-body-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 49.75%;
+}
+
+    /* img */
+.inner-container-body-left img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Inner Container Body Right */
+
+.inner-container-body-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 49.75%;
+    height: 100%;
+    max-height: 100%;
+}
+
+    /* Table */
+
+.inner-container-body-right table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inner-container-body-right table th{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: rgb(238, 242, 230, 0.7); 
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+}
+
+.inner-container-body-right table td{
+    font-size: 1.5rem;
+    border: 1px solid rgb(28, 103, 88);
+    text-align: left;
+    padding: 10px 20px;
+    background-color: rgb(238, 242, 230, 0.3);
+} 
+
+    /* Span and p */
+
+.inner-container-body-right span{
+    font-size: 1.7rem;
+}
+
+.inner-container-body-right p{
+    background-color: rgb(238, 242, 230, 0.7);
+    padding: 25px;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+

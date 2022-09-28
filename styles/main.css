@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+/* Main css that every other stylesheets imports */
+
+/* Color Palette 
+    rgb(28, 103, 88)
+    rgb(61, 131, 97)
+    rgb(214, 205, 164)
+    rgb(238, 242, 230)
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden; 
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* Navbar */
+
+nav{
+    background-color: rgb(28, 103, 88);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height:70px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+nav div{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav span{
+    margin-left: 15px;
+    font-family: "Dancing Script", sans-serif;
+    color: rgb(238, 242, 230);
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+nav span a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav span:hover{
+    color: rgb(214, 205, 164);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline;
+    margin: 20px;
+    color: rgb(238, 242, 230);
+    font-size: 1.2rem;
+}
+
+nav ul li a, nav ul li a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover{
+    color: rgb(214, 205, 164);
+    transition: 0.3 ease-in-out;
+    cursor:pointer;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer */
+
+footer {
+    height: 70px;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(28, 103, 88);
+    box-shadow: 2px -2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    color: rgb(238, 242, 230);
+    font-size: 1.2rem;
+}
+
+footer span{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Containers */
+
+.outer-container{
+    background-color: transparent;
+    height: calc(100% - (70px + 70px));
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 242, 230);
+}
+
+.center-horizontally{
+    justify-content: center;
+}
+
+.center-vertically{
+    align-items: center;
+}
+
+/* Inner Container */
+
+.inner-container{
+    height: auto;
+    width: auto;
+}
+
+.inner-container-title{
+    background-color: rgb(28, 103, 88);
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(238, 242, 230);
+    height: 40px;
+    width: inherit;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.inner-container-body{
+    border-radius: 5px;
+    height: 500px;
+    width: 1000px;
+    font-size: 1.5rem;
+    color: rgb(61, 131, 97, 1.0);
+    padding: 30px;
+    text-align: justify;
+    background-color: rgb(214, 205, 164, 1);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}

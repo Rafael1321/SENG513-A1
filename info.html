@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodie</title>
+        <link rel="icon" href="assets/food/hamburger.png">
+        <link rel="stylesheet" href="styles/info.css">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <img src="assets/food/hamburger.png" alt="">
+                <span><a href="/home.html">Foodie</a></span>
+            </div>
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/catalogue.html">Catalogue</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="outer-container center-horizontally center-vertically">
+            <div class="inner-container">
+                <div class="inner-container-title">Food Info</div>
+                <div class="inner-container-body">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span>&copy; Rafael Flores Souza</span>
+        </footer>
+
+        <script>
+            const queryParams = window.location.search;
+            const params = new URLSearchParams(queryParams);
+            const food = null;
+
+            fetch('./food-data.json')
+            .then(response => response.json())
+            .then(data => {
+                const food = data.food[parseInt(params.get('foodId'))];
+                const innerContainerBody = document.getElementsByClassName("inner-container-body")[0];
+                var ingredients = "";
+                var count = 1;
+                food.ingredients.forEach((ing => {
+                    ingredients += `<tr><td>${count}. ${ing}</td></tr>`
+                    count++;
+                }));
+                document.getElementsByClassName("inner-container-title")[0].innerHTML =food.name
+                innerContainerBody.innerHTML = `<div class="inner-container-body-left">
+                                                    <img src=${food.img} alt=${food.name}>
+                                                </div>
+                                                <div class="separator"></div>
+                                                <div class="inner-container-body-right">
+                                                    <table><tr><th>Ingredients</th></tr>${ingredients}</table>
+                                                    <p><span>Description</span>: ${food.description}</p>
+                                                </div>`
+            }).catch(error => console.log(error));
+        </script>
+
+    </body>
+</html>
