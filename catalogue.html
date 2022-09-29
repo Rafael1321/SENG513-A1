@@ -18,7 +18,6 @@
             </ul>
         </nav>
         <div class="outer-container center-horizontally center-vertically">
-        
             <div class="inner-container">
                 <div class="inner-container-title">Food Catalogue</div>
                 <div class="inner-container-body"></div>
@@ -31,6 +30,7 @@
         <script>
             function handleClick(foodId) { location.href = `/info.html?foodId=${parseInt(foodId.substring(foodId.indexOf("-") + 1))}`};
 
+            // Fetching Data from local json file
             fetch('./food-data.json')
             .then(response => response.json())
             .then(data => {
@@ -38,7 +38,7 @@
                 var count = 0
                 const innerContainerBody = document.getElementsByClassName("inner-container-body")[0];
                 data.food.forEach( food => {
-                    if(count % 4 === 0){
+                    if(count % 4 === 0){ // At most four elements per row
                         innerContainerBody.innerHTML += `<div class="row"></div>`
                     }
                     const lastRow = innerContainerBody.getElementsByClassName('row')[innerContainerBody.getElementsByClassName('row').length - 1];

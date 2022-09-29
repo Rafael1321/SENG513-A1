@@ -2,65 +2,76 @@
     "food" : [
         {
             "name":"Hamburger",
-            "ingredients": ["bun", "tomato", "onion", "meat"],
+            "ingredients": ["Bun", "Tomato", "Onion", "Ground Beef"],
             "img": "./assets/food/hamburger.png",
             "description": "A round patty of ground beef, fried or grilled and typically served on a bun or roll and garnished with various condiments."
         },
         {
             "name":"Hot Pot",
-            "ingredients": [""],
-            "img": "./assets/food/hot-pot.png"
+            "ingredients": ["Veggies", "Beef", "Noodles", "Broth"],
+            "img": "./assets/food/hot-pot.png",
+            "description": " soup-food or steamboat, is a cooking method that originated in China. A heat source on the dining table keeps a pot of soup stock simmering, and a variety of Chinese foodstuffs and ingredients are served beside the pot for the diners to put into the hot stock."
         },
         {
             "name":"Tteok",
-            "ingredients": [""],
-            "img": "./assets/food/tteok.png"
+            "ingredients": ["gloutinous rice", "non-gloutinous rice", "salt"],
+            "img": "./assets/food/tteok.png",
+            "description": "class of Korean rice cakes made with steamed flour made of various grains, including glutinous or non-glutinous rice. Steamed flour can also be pounded, shaped, or pan-fried to make tteok"
         },
         {
             "name":"Pizza",
-            "ingredients": [],
-            "img": "./assets/food/pizza.png"
+            "ingredients": ["Dough", "Tomato Sauce", "Pepperoni", "Olives", "Cheese"],
+            "img": "./assets/food/pizza.png",
+            "description": "dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly"
         },
         {
             "name":"Roasted Chicken",
-            "ingredients": [""],
-            "img": "./assets/food/roasted-chicken.png"
+            "ingredients": ["Chicken", "Butter", "Salt", "Garlic", "Onion"],
+            "img": "./assets/food/roasted-chicken.png",
+            "description": "Prepared as food by roasting whether in a home kitchen, over a fire, or with a rotisserie (rotary spit). Generally, the chicken is roasted with its own fat and juices by circulating the meat during roasting, and therefore, are usually cooked exposed to fire or heat with some type of rotary grill so that the circulation of these fats and juices is as efficient as possible"
         },
         {
             "name":"Ramen",
-            "ingredients": [""],
-            "img": "./assets/food/ramen.png"
+            "ingredients": ["Noodle", "Chicken", "Egg", "Garlic", "Soy Sauce"],
+            "img": "./assets/food/ramen.png",
+            "description":"Japanese noodle dish. It consists of Chinese-style wheat noodles served in a broth; common flavors are soy sauce and miso, with typical toppings including sliced pork, nori, menma, and scallions."
         },
         {
             "name":"Masala Dosa",
-            "ingredients": [""],
-            "img": "./assets/food/masala-dosa.png"
+            "ingredients": ["Parboiled Rice", "Potato", "Water"],
+            "img": "./assets/food/masala-dosa.png",
+            "description": "Variation of the popular South Indian dosa which has its origins in Tuluva Udupi cuisine of Karnataka. It is made from rice, lentils, potato, fenugreek, ghee and curry leaves, and served with chutneys and sambar. It is popular in South India."
         },
         {
             "name":"Garlic Shrimp",
-            "ingredients": [],
-            "img": "./assets/food/garlic-shrimp.png"
+            "ingredients": ["Shrimp", "Garlic", "Olive Oil", "Lemon"],
+            "img": "./assets/food/garlic-shrimp.png",
+            "description": "Succulent shrimp tossed in an easy garlic and lemon sauce. The perfect quick dinner or appetizer!"
         },
         {
             "name":"Noodle Soup",
-            "ingredients": [""],
-            "img": "./assets/food/noodle-soup.png"
+            "ingredients": ["Noodles", "Green Onion", "Pork", "Garlic"],
+            "img": "./assets/food/noodle-soup.png",
+            "description": "Variety of soups with noodles and other ingredients served in a light broth. Noodle soup is a common dish across East Asia, Southeast Asia and the Himalayan states of South Asia."
         },
         {
             "name":"Paella",
-            "ingredients": [""],
-            "img": "./assets/food/paella.png"
+            "ingredients": ["Rice", "Chicken", "Chorizo", "Garlic", "Prawn/Shrimp"],
+            "img": "./assets/food/paella.png",
+            "description": "Rice dish originally from Valencia. While it is commonly viewed by non-Spaniards as Spain's national dish, Spaniards almost unanimously consider it to be a dish from the Valencian region. Valencians, in turn, regard paella as one of their identifying symbols."
         },
 
         {
             "name":"Hot Dog",
-            "ingredients": [""],
-            "img": "./assets/food/hot-dog.png"
+            "ingredients": ["Beef Hotdot", "Cheese", "Hot Dog Bun", "Mustard"],
+            "img": "./assets/food/hot-dog.png",
+            "description": "Food consisting of a grilled or steamed sausage served in the slit of a partially sliced bun. The term hot dog can also refer to the sausage itself. The sausage used is a wiener or a frankfurter. The names of these sausages also commonly refer to their assembled dish."
         },
         {
             "name":"Paneer",
-            "ingredients": [],
-            "img": "./assets/food/paneer.png"
+            "ingredients": ["Skimmed milk", "Salt"],
+            "img": "./assets/food/paneer.png",
+            "description": "Indian cottage cheese, is a fresh acid-set cheese common in India, made from cow or buffalo milk. It is a non-aged, non-melting soft cheese made by curdling milk with a fruit- or vegetable-derived acid, such as lemon juice. Its acid-set form before pressing is called chhena."
         }
     ]
 }

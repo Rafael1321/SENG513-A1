@@ -47,9 +47,9 @@
 }
 
 .inner-container-body-right input:focus ~ .custom-label,
-.inner-container-body-right input:not(:focus):valid ~ .custom-label,
+.inner-container-body-right input:not(:placeholder-shown) ~ .custom-label,
 .inner-container-body-right textarea:focus ~ .custom-label,
-.inner-container-body-right textarea:not(:focus):valid ~ .custom-label{
+.inner-container-body-right textarea:not(:placeholder-shown) ~ .custom-label{ 
   top: 8px;
   left: 53px;
   color:rgb(28, 103, 88);
