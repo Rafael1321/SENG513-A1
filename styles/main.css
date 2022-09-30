@@ -69,6 +69,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-right: 20px;
 }
 
 nav ul li{
