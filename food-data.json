@@ -10,7 +10,7 @@
             "name":"Hot Pot",
             "ingredients": ["Veggies", "Beef", "Noodles", "Broth"],
             "img": "./assets/food/hot-pot.png",
-            "description": " soup-food or steamboat, is a cooking method that originated in China. A heat source on the dining table keeps a pot of soup stock simmering, and a variety of Chinese foodstuffs and ingredients are served beside the pot for the diners to put into the hot stock."
+            "description": "soup-food or steamboat, is a cooking method that originated in China. A heat source on the dining table keeps a pot of soup stock simmering, and a variety of Chinese foodstuffs and ingredients are served beside the pot for the diners to put into the hot stock."
         },
         {
             "name":"Tteok",

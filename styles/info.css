@@ -1,68 +1,42 @@
 @import "main.css";
 
 .inner-container-body{
+    overflow-y: scroll;  
+}
+
+/* Inner container body */
+
+.inner-container-body div{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-}
-
-/* Separator */
-
-.separator{
-    width: 0.5%;
-    background-color: rgb(28, 103, 88, 0.4);
-    margin: 0 75px 0 0;
-    height: 100%;
-    border-radius: 30px;
-}
-
-/* Inner container body left */
-
-.inner-container-body-left{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 49.75%;
-}
-
-    /* img */
-.inner-container-body-left img{
-    width: 300px;
-    height: 300px;
-}
-
-/* Inner Container Body Right */
-
-.inner-container-body-right{
-    width: 49.75%;
-    height: 100%;
-    overflow-y: scroll;
+    border-radius: 15px;
+    border: 1px solid rgb(28, 103, 88);
+    padding: 15px;
+    background-color: rgb(238, 242, 230, 0.3);
+    margin-bottom: 15px;
 }
 
     /* Table */
 
-.inner-container-body-right table{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.inner-container-body div table{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.inner-container-body-right table th{
-    font-size: 1.7rem;
+.inner-container-body div table th{
+    font-size: 1.3rem;
     font-weight: bold;
     padding: 15px 0;
     background-color: rgb(238, 242, 230, 0.7); 
     text-align: center;
     padding-bottom: 10px;
     border-radius: 15px 15px 0 0;
+    padding: 20px;
 }
 
-.inner-container-body-right table td{
-    font-size: 1.5rem;
+.inner-container-body div table td{
+    font-size: 1.0rem;
     border: 1px solid rgb(28, 103, 88);
     text-align: left;
     padding: 10px 20px;
@@ -71,15 +45,60 @@
 
     /* Span and p */
 
-.inner-container-body-right span{
-    font-size: 1.7rem;
+.inner-container-body div span{
+    font-size: 1.3rem;
 }
 
-.inner-container-body-right p{
+.inner-container-body div p{
     background-color: rgb(238, 242, 230, 0.7);
     padding: 25px;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
+    margin-left: 20px;
+    margin-right: 40px;
+    border-radius: 25px;
+}
+
+/* First, second, third containers */
+
+.first-container{
+    display: flex;
+    flex-direction: column !important;
+    width: 25%;
+    background-color: red;
+}
+
+.second-container{
+    width: 20%;
+}
+
+.third-container{
+    width: 55%;
+}
+
+.first-container,
+.second-container,
+.third-container{
+    border: none!important;
+    background-color: transparent!important;
+}
+
+.first-container img{
+    width: 100px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 25px;
+}
+
+.first-container p{
+    font-size: 1.3rem !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-left: auto !important; 
+    margin-right: auto !important;
+}
+
+.third-container p {
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
 }

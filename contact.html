@@ -13,7 +13,8 @@
             </div>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./catalogue.html">Catalogue</a></li>
+                <li><a href="./catalogue.html">Visual Catalogue</a></li>
+                <li><a href="./info.html">Food Info</a></li>
                 <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
@@ -41,7 +42,7 @@
                             <textarea id="message" rows="8" placeholder=" " required></textarea>
                             <span class="custom-label">Message</span>
                         </div>
-                        <button type="submit">Send</button>
+                        <a href="mailto:raflso@icloud.com">Send</a>
                     </form>
                 </div>
             </div>
@@ -49,21 +50,6 @@
         <footer>
             <span>&copy; Rafael Flores Souza</span>
         </footer>
-
-        <script>
-            function handleFormSubmit(formEl){
-                const name = document.getElementById("name").value;
-                const email = document.getElementById("email").value;
-                const phone = document.getElementById("phone").value;
-                const message = document.getElementById("message");
-
-                const to = "raflso@icloud.com";
-                const from = email;
-                const subject = "Contact - Foodie";
-                const emailBody = `Hello Foodie,%0D%0A%0D%0A${message.value}%0D%0A%0D%0AThank you in advance.%0D%0A%0D%0ABest Regards,%0D%0A%0D%0A${name}%0D%0A${email}%0D%0A${phone}`
-                location.href = "mailto:"+to+'?cc='+""+'&subject='+subject+'&body='+emailBody;
-            }
-        </script>
-        
+                
     </body>
 </html>

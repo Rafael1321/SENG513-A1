@@ -13,47 +13,90 @@
             </div>
             <ul>
                 <li><a href="./index.html">Home</a></li>
+                <li><a href="./info.html">Food Info</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="outer-container center-horizontally center-vertically">
             <div class="inner-container">
-                <div class="inner-container-title">Food Catalogue</div>
-                <div class="inner-container-body"></div>
+                <div class="inner-container-title">Visual Catalogue</div>
+                <div class="inner-container-body">
+                    
+                    <div class="row">
+                        <div class="row-element">
+                            <img src="./assets/food/hamburger.png" alt="Hamburger"/>
+                            <hr>
+                            <p>Hamburger</p>
+                        </div>
+                        <div class="row-element">
+                            <img src="./assets/food/hot-pot.png" alt="Hot Pot"/>
+                            <hr>
+                            <p>Hot Pot"</p>
+                         </div>
+                         <div class="row-element">
+                            <img src="./assets/food/tteok.png" alt="Tteok"/>
+                            <hr>
+                            <p>Tteok</p>
+                         </div>
+                         <div class="row-element">
+                            <img src="./assets/food/pizza.png" alt="Pizza"/>
+                            <hr>
+                            <p>Pizza</p>
+                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-element">
+                            <img src="./assets/food/roasted-chicken.png" alt="Roasted Chicken"/>
+                            <hr>
+                            <p>Roasted Chicken</p>
+                        </div>
+                        <div class="row-element">
+                            <img src="./assets/food/ramen.png" alt="Ramen"/>
+                            <hr>
+                            <p>Ramen"</p>
+                         </div>
+                         <div class="row-element">
+                            <img src="./assets/food/masala-dosa.png" alt="Masala Dosa"/>
+                            <hr>
+                            <p>Masala Dosa</p>
+                         </div>
+                         <div class="row-element">
+                            <img src="./assets/food/garlic-shrimp.png" alt="Garlic Shrimp"/>
+                            <hr>
+                            <p>Garlic Shrimp</p>
+                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-element">
+                            <img src="./assets/food/noodle-soup.png" alt="Noodle Soup"/>
+                            <hr>
+                            <p>Noodle Soup</p>
+                        </div>
+                        <div class="row-element">
+                            <img src="./assets/food/paella.png" alt="Paella"/>
+                            <hr>
+                            <p>Paella</p>
+                         </div>
+                         <div class="row-element">
+                            <img src="./assets/food/hot-dog.png" alt="Hot Dog"/>
+                            <hr>
+                            <p>Hot Dog</p>
+                         </div>
+                         <div class="row-element">
+                            <img src="./assets/food/paneer.png" alt="Paneer"/>
+                            <hr>
+                            <p>Paneer</p>
+                         </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <footer>
             <span>&copy; Rafael Flores Souza</span>
         </footer>
-
-        <script>
-            function handleClick(foodId) { location.href = `./info.html?foodId=${parseInt(foodId.substring(foodId.indexOf("-") + 1))}`};
-
-            // Fetching Data from local json file
-            fetch('./food-data.json')
-            .then(response => response.json())
-            .then(data => {
-
-                var count = 0
-                const innerContainerBody = document.getElementsByClassName("inner-container-body")[0];
-                data.food.forEach( food => {
-                    if(count % 4 === 0){ // At most four elements per row
-                        innerContainerBody.innerHTML += `<div class="row"></div>`
-                    }
-                    const lastRow = innerContainerBody.getElementsByClassName('row')[innerContainerBody.getElementsByClassName('row').length - 1];
-                    lastRow.innerHTML += `<div id="food-${count}" class="row-element" onclick="handleClick(this.id)">
-                                            <img src=${food.img} alt=${food.name}/>
-                                            <hr>
-                                            <p>${food.name}</p>
-                                         </div>`
-                    count++;
-                });
-
-                food = data.food[params.get('foodId')];
-            }).catch(error => console.log(error));
-
-        </script>
-
     </body>
 </html>
