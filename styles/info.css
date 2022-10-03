@@ -60,44 +60,43 @@
 
 /* First, second, third containers */
 
-.first-container{
+.inner-container-body div .first-container{
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column;
     width: 25%;
-    background-color: red;
 }
 
-.second-container{
+.inner-container-body div .second-container{
     width: 20%;
 }
 
-.third-container{
+.inner-container-body div .third-container{
     width: 55%;
 }
 
-.first-container,
-.second-container,
-.third-container{
-    border: none!important;
-    background-color: transparent!important;
+.inner-container-body div .first-container,
+.inner-container-body div .second-container,
+.inner-container-body div .third-container{
+    border: none;
+    background-color: transparent;
 }
 
-.first-container img{
+.inner-container-body div .first-container img{
     width: 100px;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.first-container p{
-    font-size: 1.3rem !important;
-    background-color: transparent !important;
-    padding: 0 !important;
-    margin-left: auto !important; 
-    margin-right: auto !important;
+.inner-container-body div .first-container p{
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 0;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
-.third-container p {
+.inner-container-body div .third-container p {
     flex-direction: column;
     border: none;
     background-color: transparent;

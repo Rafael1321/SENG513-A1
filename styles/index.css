@@ -109,3 +109,39 @@
     background-color: rgb(22, 77, 66);
     cursor: pointer;
 }
+
+/* video */
+
+.video{
+    height: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hide-vid-black-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 205, 164, 1);
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.hide-vid-black-bottom{
+    display: flex;
+    background-color: rgb(214, 205, 164, 1);
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    font-size: 1.25rem;
+}
